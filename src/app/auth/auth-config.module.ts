@@ -13,6 +13,7 @@ export function configureAuth(oidcConfigService: OidcConfigService): () => Promi
               silentRenew: true,
               useRefreshToken: true,
               renewTimeBeforeTokenExpiresInSeconds: 30,
+              storage: localStorage
           });
 }
 
